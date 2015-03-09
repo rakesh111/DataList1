@@ -23,7 +23,9 @@ namespace SampleList.Droid
 
 			{
 				var itemList = new ParseObject ("ItemList");
-				itemList ["ItemName"] = "ball";
+				itemList ["ItemName"] = "Book";
+				itemList ["ItemPrice"] = 200;
+				itemList["ItemSize"] = "Big";
 				await itemList.SaveAsync ();
 			}
 			items = new string[] { "Item1","Item2","Item3","Item4","Item6","Item7" };
